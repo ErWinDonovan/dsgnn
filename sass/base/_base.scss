@@ -9,6 +9,40 @@ div, input, textarea {
 img {
 	max-width: 100%;
 	height: auto;
-	display: block;
 }
 
+h1, h2, h3 {
+	font-family: $roboto;
+	text-transform: uppercase;
+	line-height: 1.4;
+	margin-bottom: 15px;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	transition: color .2s,  border .2s;
+	&:hover {
+		color: #fb9f46;
+	}
+}
+
+p {
+	font-family: $roboto;
+	line-height: 1.4;
+	margin-bottom: 15px;
+}

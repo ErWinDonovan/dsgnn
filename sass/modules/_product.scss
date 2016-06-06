@@ -1,50 +1,342 @@
+.projects, .lamp, .chair, .armchair, .tabano, .potter, .fiji, .sofa, .alessi, .timeline {
+	position: relative;
+	img {
+		position: absolute;
+	}
+}
+
+.projects, .lamp, .chair, .armchair, .tabano {
+	min-height: 500px;	
+}
+
+
+.potter, .fiji {
+	min-height: 250px;	
+}
+
+.sofa, .alessi, .timeline {
+	min-height: 300px;	
+}
+
 .projects {
 	background-color: #ebb240;
-	min-height: 500px;
 }
 
 .lamp {
 	background-color: #fff;
-	min-height: 500px;
 }
 
 .chair {
 	background-color: #718190;
-	min-height: 500px;
 }
 
 .armchair {
 	background-color: #eaeaea;
-	min-height: 500px;
 }
 
 .potter {
 	background-color: #dfe0d9;
-	min-height: 250px;
 }
 
 .tabano {
 	background-color: #f7f7f3;
-	min-height: 500px;
 }
 
 .fiji {
 	background-color: #fff;
-	min-height: 250px;
 }
-
 
 .sofa {
 	background-color: #fff;
-	min-height: 300px;
 }
 
 .alessi {
 	background-color: #cecece;
-	min-height: 300px;
 }
 
 .timeline {
 	background-color: #ebb240;
-	min-height: 300px;
+}
+//////////////////////////////
+
+
+.section-header {
+	position: absolute;
+	right: 120px;
+	bottom: 140px;
+	color: #fff;
+}
+
+.projects-menu {
+	font-family: $roboto;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #fff;
+	padding-left: 20px;
+	max-width: 120px;
+	position: absolute;
+	top: 150px;
+	left: 165px;
+	a {
+		display: block;
+		padding: 2px;
+		color: #fff;
+		&:hover {
+			color: #000;
+			&:before {
+				content: $font-Flaticon-right-arrow;
+				font-family: "Flaticon";
+				position: absolute;
+				left: 2px;
+				color: #000;
+			}
+		}
+	}
+}
+
+.projects-active {
+	a {
+		color: #000;
+		&:before {
+			content: $font-Flaticon-right-arrow;
+			font-family: "Flaticon";
+			position: absolute;
+			left: 2px;
+		}
+	}
+}
+
+//////////////////////////////
+
+.meta {
+	position: absolute;
+	font-size: 12px;
+	top: 70px;
+	left: 75px;
+	max-width: 240px;
+	p {
+		margin-bottom: 0;
+		text-transform: uppercase;
+		line-height: 1;
+	}
+	a {
+		font-weight: 300;
+	}
+}
+
+.view {
+		position: absolute;
+		top: 250px;
+		left: 75px;
+	a {
+		font-family: $roboto;
+		font-size: 18px;
+		font-weight: 300;
+		text-transform: uppercase;
+		 &:before {
+			content: $font-Flaticon-right-arrow; 
+			font-family: "Flaticon";
+			color: #ebb240;
+			padding-right: 5px;
+		 }
+	}
+}
+
+.like {
+	position: absolute;
+	left: 140px;
+	bottom: 60px;
+	a {
+		display: block;
+		&:before {
+			content: $font-Flaticon-heart;
+			font-family: "Flaticon";
+			font-size: 24px;
+		}
+	}
+	p {
+		font-size: 10px;
+		font-weight: 300;
+		color: #F00;
+		margin-bottom: 0;
+	}
+}
+
+.chair {
+	color: #e9eced;
+	a {
+		color: #e9eced;
+		&:hover {
+			color: #000;
+		}
+	}
+	.meta {
+		left: 25px;
+		top: 35px;
+	}
+	.view {
+		left: 25px;
+		top: 160px;
+	}
+
+	.like {
+		left: 80px;
+		top: 200px;
+		bottom: auto;
+	}
+}
+
+.armchair {
+	.meta {
+		right: 210px;
+		top: 85px;
+		left: auto;
+	}
+	.view {
+		left: auto;
+		right: 50px;
+		top: 90px;
+	}
+
+	.like {
+		left: auto;
+		right: 95px;
+		top: 135px;
+		bottom: auto;
+	}
+}
+
+.potter {
+	.meta {
+		right: auto;
+		top: 30px;
+		left: 40px;
+		bottom: auto;
+		max-width: 150px;
+	}
+	.view {
+		left: 40px;
+		right: auto;
+		top: 170px;
+		bottom: auto;
+	}
+
+	.like {
+		left: 100px;
+		right: auto;
+		top: 200px;
+		bottom: auto;
+	}	
+}
+
+.tabano {
+	.meta {
+		right: auto;
+		top: auto;
+		left: 60px;
+		bottom: 40px;
+	}
+	.view {
+		left: 220px;
+		right: auto;
+		top: auto;
+		bottom: 70px;
+	}
+
+	.like {
+		left: 380px;
+		right: auto;
+		top: auto;
+		bottom: 50px;
+	}	
+}
+
+.fiji {
+	.meta {
+		right: 40px;
+		top: 40px;
+		left: auto;
+		bottom: auto;
+	}
+	.view {
+		right: 50px;
+		top: 170px;
+		left: auto;
+		bottom: auto;
+	}
+
+	.like {
+		left: auto;
+		right: 100px;
+		top: 200px;
+		bottom: auto;
+	}	
+}
+
+.sofa {
+	.meta {
+		right: auto;
+		top: auto;
+		left: 120px;
+		bottom: 40px;
+	}
+	.view {
+		right: auto;
+		top: auto;
+		left: 320px;
+		bottom: 60px;
+	}
+
+	.like {
+		right: 60px;
+		top: auto;
+		left: auto;
+		bottom: 40px;
+	}	
+}
+
+.alessi {
+	.meta {
+		right: 50px;
+		top: 50px;
+		left: auto;
+		bottom: auto;
+	}
+	.view {
+		right: 50px;
+		top: 180px;
+		left: auto;
+		bottom: auto;
+	}
+
+	.like {
+		right: 110px;
+		top: 220px;
+		left: auto;
+		bottom: auto;
+	}	
+}
+
+//////////////////////////////
+
+.timeline {
+	.projects-menu{
+		left: 60px;
+		top: 55px;
+		h3 {
+			color: #000;
+		}
+	}
+}
+
+.timeline-active {
+	a {
+		&:before {
+			content: $font-Flaticon-right-arrow;
+			font-family: "Flaticon";
+			position: absolute;
+			left: 2px;
+			color: #fff;
+		}
+	}
 }

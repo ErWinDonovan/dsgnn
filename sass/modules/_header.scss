@@ -1,8 +1,127 @@
-.logo {
-	min-height: 500px;
+.logo, .menu {
+	min-height: 500px;	
+	position: relative;
 }
 
 .menu {
+	padding-top: 50px;
 	background-color:  #7acec3;
-	min-height: 500px;
+}
+
+///////////////////////////////
+
+.prod-content {
+	max-width: 160px;
+	padding-left: 5px;
+    padding-right: 5px;
+	position: absolute;
+	top: 45px;
+	left: 150px;
+	ul {
+		text-align: center;	
+		li {
+		display: inline-block;
+			a {
+				color: #7acec3;
+				font-size: 18px;
+				display: block;
+				width: 28px;
+				&:hover {
+					color: #000;
+				}
+			}
+		}
+	}
+}
+
+.logo-text {
+	color: #393d3c;
+	font-family: $roboto;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.logo-social {
+	margin-top: 50px;
+}
+
+.facebook {
+	a {
+		&:before {
+			content: $font-Flaticon-facebook-logo;
+			font-family: "Flaticon";
+		}
+	}
+}
+
+.twitter {
+	a {
+		&:before {
+			content: $font-Flaticon-twitter-social;
+			font-family: "Flaticon";
+		}
+	}
+}
+
+.linkid {
+	a {
+		&:before {
+			content: $font-Flaticon-linkedin-logo;
+			font-family: "Flaticon";
+		}
+	}
+}
+
+.gplus {
+	a {
+		&:before {
+			content: $font-Flaticon-google-plus-symbol;
+			font-family: "Flaticon";
+		}
+	}
+}
+
+//////////////////////
+
+
+.menu-toggle {
+	text-align: center;
+	a {
+		display: inline-block;
+		margin: auto;
+		width: 125px;
+		height: 115px;
+		border: 2px solid #fff;
+		line-height: 110px;
+    	font-size: 33px;
+    	color: #fff;
+    	&:hover {
+			color: #000;
+			border: 2px solid #000;
+			}
+		&:before {
+			font-family: "Flaticon";
+			content: $font-Flaticon-bars;
+		}
+	}
+}
+
+.menu-adress, .menu-telephone {
+	font-family: $roboto;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #fff;
+	position: absolute;
+}
+
+.menu-adress {
+	max-width: 100px;
+	left: 60px;
+	bottom: 170px;
+}
+
+.menu-telephone {
+	max-width: 140px;
+	left: 135px;
+	bottom: 100px;
 }

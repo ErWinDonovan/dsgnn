@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*********RESET**********/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -68,7 +69,42 @@ div, input, textarea {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: color .2s,  border .2s;
+}
+a:hover {
+  color: #fb9f46;
+}
+
+p {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  line-height: 1.4;
+  margin-bottom: 15px;
 }
 
 /*********GRID***********/
@@ -1023,63 +1059,629 @@ img {
 }
 
 /********MODULES*********/
-.logo {
+.logo, .menu {
   min-height: 500px;
+  position: relative;
 }
 
 .menu {
+  padding-top: 50px;
   background-color: #7acec3;
+}
+
+.prod-content {
+  max-width: 160px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  top: 45px;
+  left: 150px;
+}
+.prod-content ul {
+  text-align: center;
+}
+.prod-content ul li {
+  display: inline-block;
+}
+.prod-content ul li a {
+  color: #7acec3;
+  font-size: 18px;
+  display: block;
+  width: 28px;
+}
+.prod-content ul li a:hover {
+  color: #000;
+}
+
+.logo-text {
+  color: #393d3c;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.logo-social {
+  margin-top: 50px;
+}
+
+.facebook a:before {
+  content: "";
+  font-family: "Flaticon";
+}
+
+.twitter a:before {
+  content: "";
+  font-family: "Flaticon";
+}
+
+.linkid a:before {
+  content: "";
+  font-family: "Flaticon";
+}
+
+.gplus a:before {
+  content: "";
+  font-family: "Flaticon";
+}
+
+.menu-toggle {
+  text-align: center;
+}
+.menu-toggle a {
+  display: inline-block;
+  margin: auto;
+  width: 125px;
+  height: 115px;
+  border: 2px solid #fff;
+  line-height: 110px;
+  font-size: 33px;
+  color: #fff;
+}
+.menu-toggle a:hover {
+  color: #000;
+  border: 2px solid #000;
+}
+.menu-toggle a:before {
+  font-family: "Flaticon";
+  content: "";
+}
+
+.menu-adress, .menu-telephone {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+}
+
+.menu-adress {
+  max-width: 100px;
+  left: 60px;
+  bottom: 170px;
+}
+
+.menu-telephone {
+  max-width: 140px;
+  left: 135px;
+  bottom: 100px;
+}
+
+.projects, .lamp, .chair, .armchair, .tabano, .potter, .fiji, .sofa, .alessi, .timeline {
+  position: relative;
+}
+.projects img, .lamp img, .chair img, .armchair img, .tabano img, .potter img, .fiji img, .sofa img, .alessi img, .timeline img {
+  position: absolute;
+}
+
+.projects, .lamp, .chair, .armchair, .tabano {
   min-height: 500px;
+}
+
+.potter, .fiji {
+  min-height: 250px;
+}
+
+.sofa, .alessi, .timeline {
+  min-height: 300px;
 }
 
 .projects {
   background-color: #ebb240;
-  min-height: 500px;
 }
 
 .lamp {
   background-color: #fff;
-  min-height: 500px;
 }
 
 .chair {
   background-color: #718190;
-  min-height: 500px;
 }
 
 .armchair {
   background-color: #eaeaea;
-  min-height: 500px;
 }
 
 .potter {
   background-color: #dfe0d9;
-  min-height: 250px;
 }
 
 .tabano {
   background-color: #f7f7f3;
-  min-height: 500px;
 }
 
 .fiji {
   background-color: #fff;
-  min-height: 250px;
 }
 
 .sofa {
   background-color: #fff;
-  min-height: 300px;
 }
 
 .alessi {
   background-color: #cecece;
-  min-height: 300px;
 }
 
 .timeline {
   background-color: #ebb240;
-  min-height: 300px;
+}
+
+.section-header {
+  position: absolute;
+  right: 120px;
+  bottom: 140px;
+  color: #fff;
+}
+
+.projects-menu {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 20px;
+  max-width: 120px;
+  position: absolute;
+  top: 150px;
+  left: 165px;
+}
+.projects-menu a {
+  display: block;
+  padding: 2px;
+  color: #fff;
+}
+.projects-menu a:hover {
+  color: #000;
+}
+.projects-menu a:hover:before {
+  content: "";
+  font-family: "Flaticon";
+  position: absolute;
+  left: 2px;
+  color: #000;
+}
+
+.projects-active a {
+  color: #000;
+}
+.projects-active a:before {
+  content: "";
+  font-family: "Flaticon";
+  position: absolute;
+  left: 2px;
+}
+
+.meta {
+  position: absolute;
+  font-size: 12px;
+  top: 70px;
+  left: 75px;
+  max-width: 240px;
+}
+.meta p {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.meta a {
+  font-weight: 300;
+}
+
+.view {
+  position: absolute;
+  top: 250px;
+  left: 75px;
+}
+.view a {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.view a:before {
+  content: "";
+  font-family: "Flaticon";
+  color: #ebb240;
+  padding-right: 5px;
+}
+
+.like {
+  position: absolute;
+  left: 140px;
+  bottom: 60px;
+}
+.like a {
+  display: block;
+}
+.like a:before {
+  content: "";
+  font-family: "Flaticon";
+  font-size: 24px;
+}
+.like p {
+  font-size: 10px;
+  font-weight: 300;
+  color: #F00;
+  margin-bottom: 0;
+}
+
+.chair {
+  color: #e9eced;
+}
+.chair a {
+  color: #e9eced;
+}
+.chair a:hover {
+  color: #000;
+}
+.chair .meta {
+  left: 25px;
+  top: 35px;
+}
+.chair .view {
+  left: 25px;
+  top: 160px;
+}
+.chair .like {
+  left: 80px;
+  top: 200px;
+  bottom: auto;
+}
+
+.armchair .meta {
+  right: 210px;
+  top: 85px;
+  left: auto;
+}
+.armchair .view {
+  left: auto;
+  right: 50px;
+  top: 90px;
+}
+.armchair .like {
+  left: auto;
+  right: 95px;
+  top: 135px;
+  bottom: auto;
+}
+
+.potter .meta {
+  right: auto;
+  top: 30px;
+  left: 40px;
+  bottom: auto;
+  max-width: 150px;
+}
+.potter .view {
+  left: 40px;
+  right: auto;
+  top: 170px;
+  bottom: auto;
+}
+.potter .like {
+  left: 100px;
+  right: auto;
+  top: 200px;
+  bottom: auto;
+}
+
+.tabano .meta {
+  right: auto;
+  top: auto;
+  left: 60px;
+  bottom: 40px;
+}
+.tabano .view {
+  left: 220px;
+  right: auto;
+  top: auto;
+  bottom: 70px;
+}
+.tabano .like {
+  left: 380px;
+  right: auto;
+  top: auto;
+  bottom: 50px;
+}
+
+.fiji .meta {
+  right: 40px;
+  top: 40px;
+  left: auto;
+  bottom: auto;
+}
+.fiji .view {
+  right: 50px;
+  top: 170px;
+  left: auto;
+  bottom: auto;
+}
+.fiji .like {
+  left: auto;
+  right: 100px;
+  top: 200px;
+  bottom: auto;
+}
+
+.sofa .meta {
+  right: auto;
+  top: auto;
+  left: 120px;
+  bottom: 40px;
+}
+.sofa .view {
+  right: auto;
+  top: auto;
+  left: 320px;
+  bottom: 60px;
+}
+.sofa .like {
+  right: 60px;
+  top: auto;
+  left: auto;
+  bottom: 40px;
+}
+
+.alessi .meta {
+  right: 50px;
+  top: 50px;
+  left: auto;
+  bottom: auto;
+}
+.alessi .view {
+  right: 50px;
+  top: 180px;
+  left: auto;
+  bottom: auto;
+}
+.alessi .like {
+  right: 110px;
+  top: 220px;
+  left: auto;
+  bottom: auto;
+}
+
+.timeline .projects-menu {
+  left: 60px;
+  top: 55px;
+}
+.timeline .projects-menu h3 {
+  color: #000;
+}
+
+.timeline-active a:before {
+  content: "";
+  font-family: "Flaticon";
+  position: absolute;
+  left: 2px;
+  color: #fff;
+}
+
+.studio {
+  min-height: 500px;
+  background-color: #ff9b6d;
+}
+
+.studio-discript {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.studio-discript p {
+  font-size: 18px;
+  color: #333;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.studio-text, .studio-awards {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.studio-awards h3 {
+  border-bottom: 1px solid #ccc;
+}
+
+.studio-img {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.awards-list {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.offset {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.staff, .person {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.staff h3, .staff p {
+  color: #333;
+}
+
+.person {
+  margin-bottom: 10px;
+}
+.person h3 {
+  margin-bottom: 0px;
+}
+.person p {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.staff-photo {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.staff-cv {
+  float: left;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: 300;
+}
+.staff-cv a {
+  color: #fd5000;
+}
+.staff-cv a:hover {
+  color: #000;
+}
+.staff-cv a:after {
+  padding-left: 5px;
+  font-family: "Flaticon";
+  content: "";
+}
+
+.staff-social ul {
+  text-align: right;
+}
+.staff-social ul li {
+  display: inline-block;
+}
+.staff-social ul li a {
+  color: #fd5000;
+  font-size: 18px;
+  display: block;
+  width: 28px;
+}
+.staff-social ul li a:hover {
+  color: #000;
+}
+
+.news {
+  background-color: #d4edbf;
+  min-height: 500px;
+}
+
+.news-list {
+  background-color: #e5e9df;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.news-content {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.news-content h2 {
+  font-weight: 400;
+  margin-bottom: 0;
+  min-height: 70px;
+}
+@media (max-width: 991px) {
+  .news-content h2 {
+    min-height: 0;
+  }
+}
+
+.news-date {
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 12px;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  color: #6a6969;
+}
+
+.news-img {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.news-text {
+  min-height: 90px;
+}
+.news-text p {
+  margin-bottom: 0;
+  color: #6a6969;
+  font-weight: 300;
+}
+
+.read-more {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  text-align: right;
+  text-transform: uppercase;
+}
+.read-more a {
+  color: #fd5000;
+  padding: 5px;
+}
+.read-more a:hover {
+  color: #000;
+}
+
+.map {
+  min-height: 645px;
+  background: url(../img/map.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.about {
+  padding-top: 140px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about-adress p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.about-logo ul {
+  text-align: center;
+}
+.about-logo ul li {
+  display: inline-block;
+}
+.about-logo ul li a {
+  color: #7acec3;
+  font-size: 18px;
+  display: block;
+  width: 28px;
+}
+.about-logo ul li a:hover {
+  color: #000;
+}
+
+.credits {
+  text-align: center;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+  margin-top: 100px;
+  padding: 20px;
+  clear: both;
 }
 
 /************************/
